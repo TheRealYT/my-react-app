@@ -36,9 +36,9 @@ function App() {
             class="inline-flex items-center justify-center p-2 bg-transparent cursor-pointer rounded-full"
           >
             {like ? (
-              <HeartIcon height="16" width="16" className="text-blue-500" />
+              <HeartIcon height="16" width="16" className="text-red-500" />
             ) : (
-              <HeartIconO height="16" width="16" className="text-blue-500" />
+              <HeartIconO height="16" width="16" className="text-red-500" />
             )}
           </span>
         </div>
