@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import { PauseIcon, PlayIcon } from '@heroicons/react/24/solid'
+import { PauseIcon, PlayIcon, HeartIcon } from "@heroicons/react/24/solid";
+import { HeartIcon as HeartIconO } from "@heroicons/react/24/outline";
 
 function App() {
   const [isPlaying, setPlay] = useState(true);
@@ -15,7 +16,11 @@ function App() {
             onClick={() => setPlay((isPlaying) => !isPlaying)}
             class="inline-flex items-center justify-center p-2 bg-blue-500 hover:bg-blue-600 cursor-pointer rounded-full shadow-lg"
           >
-            {isPlaying ? <PauseIcon height="16" width="16" className="text-white"/> : <PlayIcon height="16" width="16" className="text-white"/>}
+            {isPlaying ? (
+              <PauseIcon height="16" width="16" className="text-white" />
+            ) : (
+              <PlayIcon height="16" width="16" className="text-white" />
+            )}
           </span>
 
           <input
@@ -31,39 +36,9 @@ function App() {
             class="inline-flex items-center justify-center p-2 bg-transparent cursor-pointer rounded-full"
           >
             {like ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="#2196f3"
-                class="bi bi-heart-fill"
-                viewBox="0 0 16 16"
-              >
-                {" "}
-                <path
-                  fill-rule="evenodd"
-                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-                />{" "}git config 
-                
-              </svg>
+              <HeartIcon height="16" width="16" className="text-blue-500" />
             ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 512 512"
-                id="IconChangeColor"
-              >
-                <path
-                  d="M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="48px"
-                  id="mainIconPathAttribute"
-                  stroke="#2196f3"
-                ></path>
-              </svg>
+              <HeartIconO height="16" width="16" className="text-blue-500" />
             )}
           </span>
         </div>
