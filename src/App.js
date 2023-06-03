@@ -56,9 +56,9 @@ function App() {
         </div>
 
         <div class="mt-2 flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-            <span class="pl-3 py-1.5 flex select-none items-center">@web/</span>
-            <input class="w-full border-0 pl-1 px-3 py-1.5 block flex-1 border-0 bg-transparent placeholder:text-gray-400 sm:text-sm sm:leading-6 outline-none" />
-          </div>
+          <span class="pl-3 py-1.5 flex select-none items-center">@web/</span>
+          <input class="w-full pl-1 px-3 py-1.5 block flex-1 border-0 bg-transparent placeholder:text-gray-400 sm:text-sm sm:leading-6 outline-none" />
+        </div>
       </div>
     </div>
   );
